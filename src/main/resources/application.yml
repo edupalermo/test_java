@@ -1,0 +1,19 @@
+#Database Configuration
+spring:
+  datasource:
+    driver-class-name: org.apache.derby.jdbc.ClientDriver
+    url: jdbc:derby://localhost:1527/TestDb;create=true
+    username: JAPP
+  #  password:
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        default_schema: JAPP
+    hibernate:
+      ddl-auto: validate
+    show_sql: true
+    format_sql: true
+
+flyway:
+  schema: JAPP

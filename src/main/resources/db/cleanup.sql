@@ -1,0 +1,5 @@
+DROP TABLE PERSON_DETAIL;
+DROP TABLE PERSON;
+drop SEQUENCE PERSON_SEQ RESTRICT;
+
+drop table "flyway_schema_history"
